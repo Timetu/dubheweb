@@ -1,0 +1,47 @@
+ajax======相关
+assets===公用资源
+components=====非路由组件
+config=======配置
+pages====路由组件
+utils========工具模块
+
+安装yard：npm i -g yarn
+下载antd组件库：yarn add antd
+下载路由模块：npm i react-router-dom
+下载工具包：yarn add less less-loader
+
+
+第一步，分别执行下面三条指令：
+npm install customize-cra react-app-rewired --dev
+yarn add less-loader@7.3.0
+yarn add babel-plugin-import
+
+第二步，安装好上面的包以后，在根目录下新建config-overrides.js文件，把这段代码放进去：
+const { override, addLessLoader, fixBabelImports } = require("customize-cra");
+
+module.exports = override(
+  fixBabelImports("import", {
+    libraryName: "antd",
+    libraryDirectory: 'es',
+    style: "css",
+  }),
+  addLessLoader({
+    lessOptions: {
+      javascriptEnabled: true,
+      modifyVars: { '@primary-color': '#1DA57A' },
+    },
+    sourceMap: true,
+  }),
+);
+
+第三步，然后修改package.json文件中scripts的启动，把react-scripts，改成react-app-rewired：
+"scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+
+
+
+
