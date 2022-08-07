@@ -1,0 +1,151 @@
+/*置顶菜单栏*/
+.menu1{
+    width:100%;
+    height:60px;
+    background-color:#040c1f;
+    position:fixed;
+    top:0;left:0;right:0;
+    }
+
+.menu101{
+    width:20%;
+    height:100%;
+    float:left;
+    }
+
+.menu102{
+    width:60%;
+    height:100%;
+    float:left;
+    }
+
+.menu1021{
+    width:14.2%;
+    height:100%;
+    float:left;
+    margin:0 auto;
+    }
+
+.menu1022{
+    color:#05f2f2;
+    text-align:center;
+    line-height:60px;
+    }
+
+/*菜单选择样式*/
+.menu1022 a {
+    color:#05f2f2;
+    background-color:none;
+    padding:23px 15px;
+    text-align:center;
+    line-height:15px;
+    text-decoration: none;
+    display: inline-block;
+    }
+.menu1022 a:hover {
+    background-color:#106a92;
+    font-size:20px;
+    color:white;
+    }
+
+/*内容框架*/
+.menu2{
+    width:100%;
+    background-color:black;
+    position:fixed;
+    top:60px;
+    right:0;
+    left:0;
+    overflow:hidden;
+    }
+/*置顶层*/
+.menu201{
+    position:fixed;
+    width:100%;
+    background-color:black;
+    margin:0 auto;
+    }
+
+.menu2011{
+    width:60%;
+    z-index:10;
+    position:relative;
+    margin-top:0;
+    margin-left:20%;
+    margin-right:20%;
+    }
+
+.menu2011_1{
+    position:absolute;
+    height:130px;
+    margin-top:195px;
+    margin-left:15%;
+    }
+
+.menu2011_2{
+    position:absolute;
+    width:100%;
+    margin-top:335px;
+    margin-left:9%
+    }
+/*搜索框效果*/
+.d1{
+    width:68%;
+    height:50px;
+    position:relative;
+    }
+
+.d2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    }
+/*放大镜位置*/
+.d3{
+    position:absolute;
+    height:35px;
+    top:10px;
+    right:-61px;
+    }
+
+/*中间层*/
+.menu2012{
+    width:100%;
+    position:fixed;
+    margin:0 auto;
+    background-color:black;
+    opacity:0;
+    z-index:5;
+    }
+/*置底层*/
+.menu2013{
+    width:100%;
+    margin-left:-2.5%;
+    }
+
+/*搜索输入框*/
+/*搜索*/
+.i1{
+    width:70px;
+    height:35px;
+    margin-left:10px;
+    font-size:20px;
+    color:white;
+    text-align:center;
+    line-height:17.5px;
+    border-radius:17.5px;
+    background:none;
+    }
+/*输入框*/
+.i2{
+    width:100%;
+    height:100%;
+    font-size:25px;
+    color:white;
+    border-radius:25px;
+    padding-left:25px;
+    padding-right:45px;
+    background:none;
+    }
+

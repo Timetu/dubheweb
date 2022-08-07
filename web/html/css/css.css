@@ -1,0 +1,59 @@
+/* body{
+    background-color:black;
+    margin:0;
+    overflow:hidden;
+    }
+*/
+/*置顶菜单栏*/
+.menu1{
+    width:100%;
+    height:60px;
+    background-color:#040c1f;
+    position:fixed;
+    top:0;left:0;right:0;
+    }
+
+.menu101{
+    width:20%;
+    height:100%;
+    float:left;
+    }
+
+.menu102{
+    width:60%;
+    height:100%;
+    float:left;
+    }
+
+.menu1021{
+    width:14.2%;
+    height:100%;
+    float:left;
+    margin:0 auto;
+    }
+
+.menu1022{
+    color:#05f2f2;
+    text-align:center;
+    line-height:60px;
+    }
+
+/*菜单选择样式*/
+.menu1022 a:link,a:visited {
+    color:#05f2f2;
+    font-size:17px;
+    background-color:none;
+    padding:25px 15px;
+    text-align:center;
+    line-height:15px;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+.menu1022 a:hover {
+    background-color:#106a92;
+    font-size:20px;
+    color:white;
+    }
+
+
